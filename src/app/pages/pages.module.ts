@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule} from "@angular/router";
 
-import { ChartsModule } from 'ng2-charts';
+
 
 import { SharedModule } from '../shared/shared.module';
 import { PagesComponent } from './pages.component';
@@ -35,7 +35,6 @@ import { ComponentsModule } from '../components/components.module';
     RouterModule,
     FormsModule,
     ComponentsModule,
-    ChartsModule
   ]
 })
 export class PagesModule { }
