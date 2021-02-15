@@ -13,12 +13,12 @@ const routes: Routes = [
         path:'dashboard', 
         component: PagesComponent,
         children: [
-          {path:'', component: DashboardComponent}, //rutas secundarias
-          {path:'grafica1', component: Grafica1Component}, //ruta secundaria
-          {path:'progress', component: ProgressComponent}, //ruta secundaria
-          {path:'promesas', component: PromesasComponent},
-          {path:'rxjs', component: RxjsComponent},
-          {path:'account-settings', component: AccountSettingsComponent}, //ruta secundaria
+          {path:'', component: DashboardComponent, data:{titulo: "dashboard"}}, //rutas secundarias
+          {path:'grafica1', component: Grafica1Component, data:{titulo: "Grafica #1"}}, //ruta secundaria
+          {path:'progress', component: ProgressComponent, data:{titulo: "Progress"}}, //ruta secundaria
+          {path:'promesas', component: PromesasComponent, data:{titulo: "Promesas"}},
+          {path:'rxjs', component: RxjsComponent, data:{titulo: "RXJS"}},
+          {path:'account-settings', component: AccountSettingsComponent, data:{titulo: "Configuraciones"}}, //ruta secundaria
         ]
       },
 
